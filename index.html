@@ -67,7 +67,6 @@
     <div class="buttons">
         <button onclick="window.location.href='http://fanatikclimb.com';">Seguir igualmente</button>
         <button onclick="copiarURL()">Copiar URL</button>
-        <button onclick="abrirEnNavegador()">Abrir en el Navegador</button>
     </div>
 
     <p class="note">También puedes darle a los tres puntitos arriba a la derecha y pinchar donde dice "Abrir en el navegador".</p>
@@ -81,14 +80,6 @@
                 alert('No se pudo copiar la URL');
                 console.error('Error al copiar la URL: ', err);
             });
-        }
-
-        function abrirEnNavegador() {
-            const url = 'http://fanatikclimb.com';
-            const confirmacion = confirm('¿Quieres abrir esta URL en tu navegador predeterminado?');
-            if (confirmacion) {
-                window.open(url, '_blank');
-            }
         }
     </script>
 </body>
