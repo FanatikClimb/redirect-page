@@ -65,7 +65,7 @@
     <p>Si estás viendo esto desde Instagram, para poder iniciar sesión con tu cuenta de Google deberás abrir la app en tu navegador predeterminado.</p>
 
     <div class="buttons">
-        <button onclick="window.location.href='https://fanatikclimb.com';">Seguir igualmente</button>
+        <button onclick="window.location.href='http://fanatikclimb.com';">Seguir igualmente</button>
         <button onclick="copiarURL()">Copiar URL</button>
     </div>
 
@@ -73,7 +73,7 @@
 
     <script>
         function copiarURL() {
-            const url = 'https://fanatikclimb.flutterflow.app/';
+            const url = 'http://fanatikclimb.com';
             navigator.clipboard.writeText(url).then(() => {
                 alert('URL copiada al portapapeles: ' + url);
             }).catch(err => {
