@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones para Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #3D5348;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: #C4A560;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #FFFFFF;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #C4A560;
+            color: #4B4B4A;
+            font-size: 1em;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button:hover {
+            background-color: #FFFFFF;
+            color: #3D5348;
+        }
+
+        .note {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #C4A560;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Atención</h1>
+    <p>Si estás viendo esto desde Instagram, para poder iniciar sesión con tu cuenta de Google deberás abrir la app en tu navegador predeterminado.</p>
+
+    <div class="buttons">
+        <button onclick="window.location.href='https://fanatikclimb.com';">Seguir igualmente</button>
+        <button onclick="copiarURL()">Copiar URL</button>
+    </div>
+
+    <p class="note">También puedes darle a los tres puntitos arriba a la derecha y pinchar donde dice "Abrir en el navegador".</p>
+
+    <script>
+        function copiarURL() {
+            const url = 'https://fanatikclimb.com';
+            navigator.clipboard.writeText(url).then(() => {
+                alert('URL copiada al portapapeles: ' + url);
+            }).catch(err => {
+                alert('No se pudo copiar la URL');
+                console.error('Error al copiar la URL: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
